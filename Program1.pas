@@ -1,15 +1,16 @@
+Program pr1;
 uses crt;
-var A: array [1..10] of integer;
-n,i: integer;
+var x,y:real;
 begin
-writeln ('Введите индекс массива от 1 до 10');
-repeat
-read(n);
-clrscr;
- for i := 1 to n do
-      begin
-       write ('a[',i,']=');
-       read (a[i]);
-       end;
-until (n <= 10) and (n < 1);
+  writeln('Пожалуйста,введите x');
+  readln (x);
+if x<0 then
+  y := sin (x);
+ if x > 1 then
+  y := 0
+  else 
+  y := cos(x);
+  writeln(y);
+  
   end.
+    
